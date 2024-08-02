@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="WA.css">
+  <title>Whatshapp</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #202020;
+      overflow: hidden;
+    }
+
+    .box {
+      margin: 0px;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 965px;
+      width: 45px;
+      background-color: #202020;
+    }
+
+    .navbar .upper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar .down {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    .navbar .upper img {
+      width: 25px;
+      padding: 5px;
+      margin: 0px 5px 0px 5px;
+      border-radius: 5px;
+    }
+
+    .navbar .upper img:last-child {
+      margin-top: 10px;
+    }
+
+    .navbar .upper img:hover {
+      background-color: rgba(255, 255, 255, 0.233);
+    }
+
+    .navbar .down i {
+      margin-bottom: 5px;
+    }
+
+    .navbar i {
+      color: white;
+      margin: auto;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .navbar i:hover {
+      background-color: rgba(255, 255, 255, 0.233);
+    }
+    #mystatus{
+        height: 70px;
+        width: 100%;
+        border: px solid red;
+        display: flex;
+    }
+    #mystatus>img{
+        
+        width:40px;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+          
+    }
+    #mystatus>h2{
+        margin-top: 5px;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    #mystatus>p{
+        color: aliceblue;
+        margin-left: -90px;
+        margin-top: 35px;
+        font-weight: 600;
+    }
+    #recent{
+        color: aliceblue;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .all_chat{
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="navbar">
+      <div class="upper">
+        <i class="fa-solid fa-grip-lines" height="30px"></i>
+        <i onclick="chatsec()" id="returnchat"class="fa-brands fa-rocketchat" height="30px"></i>
+        <i onclick="statusfunction()" id="section"class="fa-brands fa-squarespace" height="30px"></i>
+        <i onclick="callfunction()" id="callsec" class="fa-solid fa-phone" height="30px"></i>
+        <br>
+        <hr>
+        <i class="fa-regular fa-circle" height="35px"></i>
+      </div>
+      <div class="down">
+        <i class="fa-solid fa-star"></i>
+        <i onclick="archivesec()" id="arcsec" class="fa-solid fa-box-archive"></i>
+        <hr><br>
+        <i class="fa-solid fa-gear"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+    </div>
+    <div id="container">
+        <div id="text">
+            <h2>Status</h2>
+        </div>
+        <div id="mystatus">
+            <img src="images/darklight.png" height="35px">
+            <h2>My Status</h2>
+            <p>NO Updates</p>
+        </div>
+         <div id="recent">
+            <h4>Recent Updates</h4>
+         </div>
+            <div class="all_chat">
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Saurabh Phadtare</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Harsh Darji</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Akash Shaud</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Aman Tiwari</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Aditya Tiwari</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Darshan Yadav</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+                <div class="chat">
+                  <img src="images/darklight.png" height="35px">
+                  <h4>Asmit Vishwakarma</h4>
+                </div>
+              </div>
+            </div>
+
+         </div>
+
+
+
+    </div>
+</body>
+</html>
+<script>
+  function callfunction(){
+    document.getElementById("callsec")
+    window.location.href="call.html"
+  }
+  function chatsec(){
+    document.getElementById("returnchat")
+    window.location.href="WhatsApp.html"
+  }
+  function statusfunction(){
+    document.getElementById("section")
+    window.location.href="status.html"
+  }
+  function archivesec(){
+    document.getElementById("arcsec")
+    window.location.href="archive.html"
+  }
+</script>
+
